@@ -9,34 +9,34 @@ if (isset($_GET['act'])) {
             $dsMoi = shoe_getNew(4);
             $dsGhim = shoe_getPin(4);
             //hien thi du lieu
-            $view_name ='page_home';
-        break;
+            $view_name = 'page_home';
+            break;
         case 'cart':
             //lấy dữ liệu.
             if (!isset($_SESSION['user'])) {
-                $_SESSION['loi'] ='Đăng Nhập mới xem giỏ hàng được nha Fen';
-                header ('Location: '.$base_url.'user/login');
+                $_SESSION['loi'] = 'Đăng Nhập mới xem giỏ hàng được nha Fen';
+                header('Location: ' . $base_url . 'user/login');
                 return;
-                }
+            }
             include_once 'model/m_history.php';
             $matk = $_SESSION['user']['matk'];
             $giohang = history_hasCart($matk);
-            if ( $giohang ) {
-               $ctgiohang=history_getCart($matk);
+            if ($giohang) {
+                $ctgiohang = history_getCart($matk);
             } else {
-                $ctgiohang=[];
+                $ctgiohang = [];
             }
             //hiển thị dữ liệu
-            $view_name ='page_cart';
+            $view_name = 'page_cart';
             break;
-            case 'history':
-                include_once 'model/m_history.php';
-               //lấy dữ liệu
-               $matk = $_SESSION['user']['matk'];
-             $lichsu = history_getAllByAccount($matk);
-                // hiển thị dữ liệu
-                $view_name ='page_history';
-                break;
+        case 'history':
+            include_once 'model/m_history.php';
+            //lấy dữ liệu
+            $matk = $_SESSION['user']['matk'];
+            $lichsu = history_getAllByAccount($matk);
+            // hiển thị dữ liệu
+            $view_name = 'page_history';
+            break;
         default:
             # code...
             break;
