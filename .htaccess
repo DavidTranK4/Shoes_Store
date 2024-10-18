@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /xuongTH/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^admin/(.*)/(.*)/(.*)$ index.php?mod=admin&act=$1-$2&id=$3 [L]
+RewriteRule ^admin/(.*)/(.*)$ index.php?mod=admin&act=$1-$2 [L]
+RewriteRule ^shoe/removeFromCart/(.*)$ index.php?mod=shoe&act=removeFromCart&id=$1 [L]
+RewriteRule ^shoe/addToCart/(.*)$ index.php?mod=shoe&act=addToCart&id=$1 [L]
+RewriteRule ^(.*)/search/(.*)/page/(.*)$ index.php?mod=$1&act=search&keyword=$2&page=$3 [L]
+RewriteRule ^(.*)/search/(.*)$ index.php?mod=$1&act=search&keyword=$2 [L]
+RewriteRule ^(.*)/detail/([0-9]+)/page/(.*)$ index.php?mod=$1&act=detail&id=$2&page=$3 [L]
+RewriteRule ^(.*)/detail/([0-9]+)$ index.php?mod=$1&act=detail&id=$2 [L]
+RewriteRule ^upload/(.*)$ upload/$1 [L]
+RewriteRule ^template/(.*)$ template/$1 [L]
+RewriteRule ^(.*)/(.*)$ index.php?mod=$1&act=$2 [L]
+        #    page/home  index.php?mod=page&act=home

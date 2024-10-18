@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css ">
+    <script src="https://kit.fontawesome.com/1f921e4f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" collapse collapse-horizontal show col-md-2 p-0 bg-primary" data-bs-theme="dark" style="min-height:100vh ;" id="openmenu">
+          <strong class="text-center d-block p-3 text-white"><i class="fa-solid fa-user-tie fa-bounce fa-2xl"></i></strong>
+          <div class="list-group list-group-item-success m-3">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              Tổng Quan
+            </a>
+            <a href="admin account.html" class="list-group-item list-group-item-action active"><i class="fa-solid fa-user"></i> Tài Khoản</a>
+            <a href="admin account-shoe.html" class="list-group-item list-group-item-action">Chủ Đề</a>
+            <a href="#" class="list-group-item list-group-item-action">giày</a>
+          </div>
+        </div>
+        <div class="col-md p-0">
+          <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="collapse" data-bs-target="#openmenu" aria-expanded="false" aria-controls="openmenu">
+                <i class="fa-solid fa-bars"></i></button>
+              <a class="navbar-brand" href="#">SoleHeven</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Chào,Vỹ
+                    </a>
+                    <ul class="dropdown-menu end-0" style="left:auto">
+                      <li><a class="dropdown-item" href="#">Đăng Nhập</a></li>
+                      <li><a class="dropdown-item" href="#">Đăng Ký</a></li>
+                      <li><a class="dropdown-item" href="#">Xem Trang chủ</a></li>
+                      <li><a class="dropdown-item" href="#">Đăng Xuất</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <h2 class="my-3">Sửa Tài Khoản</h2>
+            <form>
+              <div class="mb-3">
+                <label for="sodienthoai" class="form-label">Số Điện Thoại</label>
+                <input type="text" class="form-control" id="sodienthoai">
+              </div>
+              <div class="mb-3">
+                <label for="hoten" class="form-label">Họ Tên</label>
+                <input type="text" class="form-control" id="hoten">
+              </div>
+              <div class="mb-3">
+                <label for="vitien" class="form-label">Ví Tiền</label>
+                <input type="number" class="form-control" id="vitien">
+              </div>
+              <div class="mb-3">
+                <label for="quyen" class="form-label">Quyền</label>
+                <select class="form-select">
+                  <option value="0" selected>Khách hàng</option>
+                  <option value="1">Quản Lý</option>
+                </select>
+                <button type="submit" class="btn btn-success my-3">Xác Nhận</button>
+              </div>
+            </form>
+          </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

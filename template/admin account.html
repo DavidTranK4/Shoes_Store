@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css ">
+    <script src="https://kit.fontawesome.com/1f921e4f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" collapse collapse-horizontal show col-md-2 p-0 bg-primary" data-bs-theme="dark" style="min-height:100vh ;" id="openmenu">
+          <strong class="text-center d-block p-3 text-white"><i class="fa-solid fa-user-tie fa-bounce fa-2xl"></i></strong>
+          <div class="list-group list-group-item-success m-3">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              Tổng Quan
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active"><i class="fa-solid fa-user"></i> Tài Khoản</a>
+            <a href="admin account-shoe.html" class="list-group-item list-group-item-action">Chủ Đề</a>
+            <a href="#" class="list-group-item list-group-item-action">giày</a>
+          </div>
+        </div>
+        <div class="col-md p-0">
+          <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="collapse" data-bs-target="#openmenu" aria-expanded="false" aria-controls="openmenu">
+                <i class="fa-solid fa-bars"></i></button>
+              <a class="navbar-brand" href="#">SoleHeven</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Chào,Vỹ
+                    </a>
+                    <ul class="dropdown-menu end-0" style="left:auto">
+                      <li><a class="dropdown-item" href="#">Đăng Nhập</a></li>
+                      <li><a class="dropdown-item" href="#">Đăng Ký</a></li>
+                      <li><a class="dropdown-item" href="#">Xem Trang chủ</a></li>
+                      <li><a class="dropdown-item" href="#">Đăng Xuất</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <h2 class="my-3">Tài Khoản</h2>
+            <a class="btn btn-success float-end" href="admin account-add.html">Thêm Tài Khoản</a>
+            <table class="table text-center align-middle">
+              <thead>
+                <th>STT</th>
+                <th>Ảnh</th>
+                <th>Họ Tên</th>
+                <th>Số Điện Thoại</th>
+                <th>Quyền</th>
+                <th>Hành Động</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img src="image/1.jpg" style="width: 40px; height: 40px;" class="rounded-3"  alt=""></td>
+                  <td>Trần Thế Vỹ</td>
+                  <td>0325598364</td>
+                  <td><span class="badge text-bg-danger">Quản Lý</span></td>
+                  <td><button class="btn btn-outline-success"><i class="fa-solid fa-gear"></i></button>
+                  <button class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
